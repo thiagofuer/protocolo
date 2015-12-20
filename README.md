@@ -48,7 +48,8 @@ PREPARAÇÃO DO AMBIENTE
     </dependencies>
 </module>
 ``` 
-    2.2.2.2-Adicione o jar do mysql: mysql-connector-java-5.1.36-bin.ja
+    2.2.2.2-Adicione o jar do mysql: mysql-connector-java-5.1.36-bin.jar       
+   [https://downloads.mysql.com/archives/c-j/]
     
 ##3-Importar o projeto no eclipse      
 ##4-Adicionar o wildfly como server no eclipse
