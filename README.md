@@ -53,10 +53,15 @@ PREPARAÇÃO DO AMBIENTE
     
 ##3-Importar o projeto no eclipse      
 ##4-Adicionar o wildfly como server no eclipse
-##5-Compilar e executar
+##5-Compilar e executar       
 
 
-
+#Principais Tecnologias Utilizadas
+1-Java 8
+2-JavaEE
+3-Maven
+4-JPA/Hibernate
+5-CDI
 
 
 #Como usar o sistema:
@@ -68,4 +73,4 @@ onde /1/1 são os parametros do WS para a distribuição do protocolo.
 O primeiro parametro representa o id da ClasseProcessual     
 O segundo parametro representa o id da Comarca      
 
-Após a execução o WS retornará uma String informando o número único do processo e o nome da vara em que ele foi distribuído.
+Após a execução o WS retornará uma String informando o número único do processo e o nome da vara em que ele foi distribuído.      
