@@ -57,11 +57,11 @@ PREPARAÇÃO DO AMBIENTE
 
 
 #Principais Tecnologias Utilizadas
-1-Java 8
-2-JavaEE
-3-Maven
-4-JPA/Hibernate
-5-CDI
+1-Java 8     
+2-JavaEE     
+3-Maven     
+4-JPA/Hibernate     
+5-CDI     
 
 
 #Como usar o sistema:
