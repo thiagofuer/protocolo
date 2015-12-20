@@ -33,9 +33,38 @@ PREPARAÇÃO DO AMBIENTE
                 </drivers>
 ```      
   2.2.2-Criar o modulo de conexão mysql em: wildfly-9.0.2.Final\modules\system\layers\base\com\mysql\main      
-    2.2.2.1-Adicionar o arquivo module.xml e mysql-connector-java-5.1.36-bin.jar     
+    2.2.2.1Criar o arquivo module.xml com o seguinte conteudo
+``` 
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.3" name="com.mysql">
+    <resources>
+        <resource-root path="mysql-connector-java-5.1.36-bin.jar"/>
+    </resources>
+
+    <dependencies>
+        <module name="javax.api" />
+        <module name="javax.transaction.api"/>
+        <module name="javax.servlet.api" optional="true"/>
+    </dependencies>
+</module>
+``` 
+    2.2.2.2-Adicione o jar do mysql: mysql-connector-java-5.1.36-bin.ja
     
-##3-Abrir o projeto no eclipse      
-##4-Adicionar o wildfly no eclipse
-##5-Importar o projeto protocolo no eclipse
-##6-Compilar e rodar
+##3-Importar o projeto no eclipse      
+##4-Adicionar o wildfly como server no eclipse
+##5-Compilar e executar
+
+
+
+
+
+#Como usar o sistema:
+1-Popular o banco de dados com os registros iniciais:
+  Acesse (Execute apenas uma vez): http://localhost:8080/protocolo/protocolar/gerar
+  Com isso o sistema ira popular o banco de dados com os registros      
+2-Para protocolar o processo acesse: http://localhost:8080/protocolo/protocolar/novo/1/1          
+onde /1/1 são os parametros do WS para a distribuição do protocolo.     
+O primeiro parametro representa o id da ClasseProcessual     
+O segundo parametro representa o id da Comarca      
+
+Após a execução o WS retornará uma String informando o número único do processo e o nome da vara em que ele foi distribuído.
