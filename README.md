@@ -1,8 +1,16 @@
 # protocolo
 PREPARAÇÃO DO AMBIENTE
 ##1-Download e instalação Banco de dados MySQL Community Server 5.6.27: https://dev.mysql.com/downloads/mysql/ 
-  1.1-Criar Schema chamado "protocolo"    
-  1.2-Cirar usuário "protocolo" e senha "protocolo" com permissão total   
+  1.1-Acessar o banco
+    `mysql -u root -p`
+  1.2-Criar Schema chamado "protocolo"  
+  `CREATE DATABASE protocolo;`
+  1.2-Cirar usuário "protocolo" e senha "protocolo" com permissão total   
+  ```	
+  CREATE USER 'protocolo'@'%' IDENTIFIED BY 'protocolo';
+	GRANT ALL ON protocolo.* TO 'protocolo'@'%' IDENTIFIED BY 'protocolo';
+	FLUSH PRIVILEGES;
+  ``` 
 ##2-Donwload e Configuração do Wildfly 9.0.2.Final: http://wildfly.org/downloads/
   2.1-Descompactar o arquivo baixado      
   2.2-Configurar o standalone.xml que se encotra em: wildfly-9.0.2.Final\standalone\configuration\standalone.xml    
