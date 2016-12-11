@@ -62,7 +62,7 @@ PREPARAÇÃO DO AMBIENTE
 ##3-Importar o projeto no eclipse      
 ##4-Adicionar o wildfly como server no eclipse
 ##5-Compilar e executar       
-
+Após fazer o deploy da aplicação no wildfly, acesse http://localhost:8080/protocolo/index.xhtml 
 
 #Principais Tecnologias Utilizadas
 1-Java 8     
@@ -70,15 +70,14 @@ PREPARAÇÃO DO AMBIENTE
 3-Maven     
 4-JPA/Hibernate     
 5-CDI     
-6-JUnit
-7-Gson
-8-Angular 1
-9-Bootstrap
+6-JUnit   
+7-Gson    
+8-Angular 1   
+9-Bootstrap 
 
 #Live Preview
 [http://wildfly-tfigueiredo.rhcloud.com/protocolo/index.xhtml]
 
 #Como usar o sistema:
-Após fazer o deploy da aplicação no wildfly, acesse http://localhost:8080/protocolo/index.xhtml 
 Selecione a comarca de destino,a classe processual e então clique no botão distribuir.
 O sistema vai fazer a analise de qual a vara da comarca que deve receber o processo, faz a distribuiço e depois retorna uma mensagem informando para qual vara foi distribuida e qual o número único do processo.
