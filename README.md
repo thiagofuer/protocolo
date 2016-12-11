@@ -8,8 +8,8 @@ PREPARAÇÃO DO AMBIENTE
   1.2-Cirar usuário "protocolo" e senha "protocolo" com permissão total   
   ```	
   CREATE USER 'protocolo'@'%' IDENTIFIED BY 'protocolo';
-	GRANT ALL ON protocolo.* TO 'protocolo'@'%' IDENTIFIED BY 'protocolo';
-	FLUSH PRIVILEGES;
+  GRANT ALL ON protocolo.* TO 'protocolo'@'%' IDENTIFIED BY 'protocolo';
+  FLUSH PRIVILEGES;
   ``` 
 ##2-Donwload e Configuração do Wildfly 9.0.2.Final: http://wildfly.org/downloads/
   2.1-Descompactar o arquivo baixado      
