@@ -70,15 +70,15 @@ PREPARAÇÃO DO AMBIENTE
 3-Maven     
 4-JPA/Hibernate     
 5-CDI     
+6-JUnit
+7-Gson
+8-Angular 1
+9-Bootstrap
 
+#Live Preview
+[http://wildfly-tfigueiredo.rhcloud.com/protocolo/index.xhtml]
 
 #Como usar o sistema:
-1-Popular o banco de dados com os registros iniciais:
-  Acesse (Execute apenas uma vez): http://localhost:8080/protocolo/protocolar/gerar
-  Com isso o sistema ira popular o banco de dados com os registros      
-2-Para protocolar o processo acesse: http://localhost:8080/protocolo/protocolar/novo/1/1          
-onde /1/1 são os parametros do WS para a distribuição do protocolo.     
-O primeiro parametro representa o id da ClasseProcessual     
-O segundo parametro representa o id da Comarca      
-
-Após a execução o WS retornará uma String informando o número único do processo e o nome da vara em que ele foi distribuído.      
+Após fazer o deploy da aplicação no wildfly, acesse http://localhost:8080/protocolo/index.xhtml 
+Selecione a comarca de destino,a classe processual e então clique no botão distribuir.
+O sistema vai fazer a analise de qual a vara da comarca que deve receber o processo, faz a distribuiço e depois retorna uma mensagem informando para qual vara foi distribuida e qual o número único do processo.
