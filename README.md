@@ -1,4 +1,5 @@
-# protocolo alterado MAC
+﻿# protocolo alterado MAC e mergeado no windows
+
 PREPARAÇÃO DO AMBIENTE
 ##1-Download e instalação Banco de dados MySQL Community Server 5.6.27: https://dev.mysql.com/downloads/mysql/ 
   1.1-Acessar o banco   
